@@ -1,5 +1,5 @@
 name: hermes-lang-pl
-version: 0.1.0
+version: 0.2.0
 description: >-
   Polish (Polski) language pack for Hermes Agent — core CLI/gateway messages, the Desktop app and the TUI.
   Disclosure — text-only language pack; no code, no network.

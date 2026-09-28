@@ -8,9 +8,9 @@ over its bundled English:
 
 | File | Surface | Source it mirrors | Keys |
 |---|---|---|---|
-| `locales/pl.yaml` | core (Python `t()`: approval prompts, gateway/slash replies, CLI, tool verbs…) | `locales/en.yaml` | 374 |
-| `locales/pl.desktop.yaml` | Hermes Desktop | `apps/desktop/src/i18n/en.ts` | 4862 |
-| `locales/pl.tui.yaml` | Hermes TUI (`hermes --tui`) | `ui-tui/src/i18n/en.ts` | 10 |
+| `locales/pl.yaml` | core (Python `t()`: approval prompts, gateway/slash replies, CLI, tips, tool verbs…) | `locales/en.yaml` | 3426 / 3426 |
+| `locales/pl.desktop.yaml` | Hermes Desktop | `apps/desktop/src/i18n/en.ts` (`locales/_keys.desktop.json`) | 4862 / 4878 (16 skipped, see below) |
+| `locales/pl.tui.yaml` | Hermes TUI (`hermes --tui`) | `ui-tui/src/i18n/en.ts` (`locales/_keys.tui.json`) | 1250 / 1250 |
 
 ## Install
 
@@ -63,7 +63,13 @@ boolean-toggle labels (`skills.toggleToolset`, `settings.model.moaReferenceToggl
 
 ## Validation
 
-Every release is checked with a script that asserts, per surface: YAML parses; every leaf is a string; the flattened
+`hermes plugins validate <checkout>` (Hermes `feat/pluggable-i18n`) reports every locale file against the English
+catalog it mirrors — see [VALIDATION.md](VALIDATION.md) for the recorded output of the current release.
+The pack is text-only, so the plugin security scanner's *caution* findings (`sudo`, `~/.ssh`, `curl | sh`
+mentioned inside translated UI strings) are expected and are not code.
+
+
+Every release is additionally checked with a script that asserts, per surface: YAML parses; every leaf is a string; the flattened
 key set equals the English key set (minus the documented skips); and the placeholder set of every value equals
 the English one. The check lives in the Hermes i18n campaign tooling (`check_pack.py`); its output for this release
 is recorded in the release notes.
