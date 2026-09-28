@@ -1,0 +1,15 @@
+# hermes-lang-pl — Polish TUI catalog (ui-tui/src/i18n/en.ts). Function-valued entries use positional {0}, {1}, … placeholders.
+status:
+  summoning: przywoływanie hermesa…
+  ready: gotowy
+  running: pracuje…
+  mcpReloaded: MCP przeładowano po zmianie konfiguracji
+overlay:
+  close: esc, aby zamknąć
+rpc:
+  requestFailed: żądanie nie powiodło się
+common:
+  'yes': tak
+  'no': nie
+  cancel: anuluj
+  unknown: nieznane
