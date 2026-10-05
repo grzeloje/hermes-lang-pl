@@ -9,7 +9,7 @@ over its bundled English:
 | File | Surface | Source it mirrors | Keys |
 |---|---|---|---|
 | `locales/pl.yaml` | core (Python `t()`: approval prompts, gateway/slash replies, CLI, tips, tool verbs…) | `locales/en.yaml` | 3426 / 3426 |
-| `locales/pl.desktop.yaml` | Hermes Desktop | `apps/desktop/src/i18n/en.ts` (`locales/_keys.desktop.json`) | 4862 / 4878 (16 skipped, see below) |
+| `locales/pl.desktop.yaml` | Hermes Desktop | `apps/desktop/src/i18n/en.ts` (`locales/_keys.desktop.json`) | 4966 / 4909 (16 skipped, see below) |
 | `locales/pl.tui.yaml` | Hermes TUI (`hermes --tui`) | `ui-tui/src/i18n/en.ts` (`locales/_keys.tui.json`) | 1250 / 1250 |
 
 ## Install
@@ -57,9 +57,18 @@ To go back: `hermes config set display.language en`; to remove: `hermes plugins 
 `pl.desktop.yaml` (the app shows English for them): editorial intro content (`intro.custom`), array/object leaves
 (`composer.newSessionPlaceholders`, `composer.followUpPlaceholders`, `sidebar.projects.branchOff`), identity
 pass-throughs (`settings.vault.identifierShown`, `commandCenter.maintenance.bytes`, `rightSidebar.folderTip`) and
-boolean-toggle labels (`skills.toggleToolset`, `settings.model.moaReferenceToggle`, `commandCenter.pets.toggleFailed`,
-`webhooks.toggleFailed`, `sidebar.projects.toggle`, `desktop.yoloSystem`, `ui.sidebar.toggle`,
-`settings.plugins.installModal.skillsReady`, `statusStack.control.gateLastExit`).
+**ternary-on-boolean entries** — strings where English interpolates a flag to choose between two wordings
+(`skills.toggleToolset` → `Turn {0} toolset {1 ? 'on' : 'off'}`, `settings.model.moaReferenceToggle`,
+`commandCenter.pets.toggleFailed`, `webhooks.toggleFailed`, `sidebar.projects.toggle`, `desktop.yoloSystem`,
+`ui.sidebar.toggle`, `settings.plugins.installModal.skillsReady`, `statusStack.control.gateLastExit`).
+
+A pack string is positional and cannot branch, so translating one would render only the "on" variant — worse than
+English. When the English catalog gains a boolean-toggle entry, leaving it out is the correct choice, not an
+oversight.
+
+Note that the file also carries 66 keys that are no longer in the English catalog (`catalog.*`,
+`assistant.clarify.lateAnswer*` — residue from removed features). Hermes ignores them; they are kept for the
+maintainer to prune in a dedicated pass.
 
 ## Validation
 

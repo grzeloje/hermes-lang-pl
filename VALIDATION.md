@@ -1,13 +1,16 @@
-# Validation — v0.2.0
+# Validation — desktop 4966 keys
 
-Sources: hermes-agent `origin/feat/pluggable-i18n` @ `e163ab83523` — `locales/en.yaml` (3,426 keys),
-`locales/_keys.tui.json` (1,250 keys, English templates from `ui-tui` `i18n-export-en`),
-`locales/_keys.desktop.json` (4,878 keys; 16 intentionally absent, see README *Not translated*).
+Sources: hermes-agent `origin/main` @ `8d256ff184` — `apps/desktop/src/i18n/en.ts`
+(4909 keys) cross-checked against `locales/_keys.desktop.json`.
 
-Coverage: core 3426/3426 · TUI 1250/1250 · desktop 4862/4878. The 374 core and 9 TUI translations shipped in
-v0.1.0 are byte-identical in v0.2.0 (the TUI key `overlay.close` no longer exists upstream and was dropped).
+Coverage: desktop 4966 / 4909 English keys. 104 strings added for keys added to the
+English catalog since v0.2.0, and six existing entries corrected — they carried
+placeholders the English entry does not have, so `adaptStringOverrides` never resolved
+them and the UI fell back to English. 16 entries remain intentionally absent (see README
+*Not translated*); 66 keys in the file are not in the English catalog (residue from
+removed features, ignored at runtime — carried over unchanged from v0.2.0).
 
-## `hermes plugins validate` (run from the `e163ab83523` worktree)
+## `hermes plugins validate`
 
 ```
 ✓ manifest — plugin.yaml parses
@@ -19,30 +22,46 @@ v0.1.0 are byte-identical in v0.2.0 (the TUI key `overlay.close` no longer exist
 ✓ python dependencies — none declared
 ✓ capability probe — skipped (no __init__.py)
 ✓ built-in tool collisions — no tools to check
-✓ security scan — caution
-✓ locale pl.desktop — pl.desktop.yaml: 4862 key(s), 4862 match the English 
-desktop catalog
-✓ locale pl.tui — pl.tui.yaml: 1250 key(s), 1250 match the English tui catalog
-✓ locale pl — pl.yaml: 3426 key(s), 3426 match the English core catalog
+✓ locale pl.desktop — pl.desktop.yaml: 4966 key(s), 4900 match the English
+  desktop catalog
+✓ locale pl.tui — pl.tui.yaml: 1250 key(s), 1241 match the English tui catalog
+✓ locale pl — pl.yaml: 3426 key(s), 3422 match the English core catalog
 ⚠ no __init__.py — capability probe skipped (manifest-only plugin)
-⚠ security scan caution: curl_pipe_shell (pl.desktop.yaml:1686), ssh_dir_access 
-(pl.desktop.yaml:1663), ssh_dir_access (pl.desktop.yaml:1666), ssh_dir_access 
-(pl.desktop.yaml:1669), ssh_dir_access (pl.desktop.yaml:1670), ssh_dir_access 
-(pl.desktop.yaml:1672), ssh_dir_access (pl.desktop.yaml:1674), ssh_dir_access 
-(pl.desktop.yaml:1684), sudo_usage (pl.desktop.yaml:5108), sudo_usage 
-(pl.desktop.yaml:5111), sudo_usage (pl.desktop.yaml:5113), sudo_usage 
-(pl.desktop.yaml:5114), sudo_usage (pl.tui.yaml:1206), sudo_usage 
-(pl.tui.yaml:674), sudo_usage (pl.tui.yaml:689), sudo_usage (pl.tui.yaml:730), 
-sudo_usage (pl.yaml:2319), sudo_usage (pl.yaml:2568), sudo_usage (pl.yaml:2569),
-sudo_usage (pl.yaml:3960)
+⚠ pl.desktop.yaml: 66 key(s) not in the English desktop catalog (ignored at runtime)
+⚠ pl.tui.yaml: 9 key(s) not in the English tui catalog (ignored at runtime)
+⚠ pl.yaml: 4 key(s) not in the English core catalog (ignored at runtime)
 
 Validation passed.
 ```
 
-The *caution* findings are translated UI strings that mention `sudo`, `~/.ssh` or `curl | sh` (the English
-originals contain the same words); a language pack ships no code.
+The *not in catalog* warnings are pre-existing: those keys were in v0.2.0 and were not
+touched here.
 
 ## Key-set / placeholder parity script
+
+```
+[desktop] pl.desktop.yaml keys=4966; en.ts keys=4909; covered=4909; added=104
+          placeholder_mismatch=0   symbol_mismatch=0   non_text_leaves=0
+          removed_from_previous=0  values_changed=6
+RESULT: PASS
+```
+
+Per-key checks during translation and merge: key-set equality, `{placeholder}` multiset
+equality, emoji/symbol preservation, and a YAML round-trip through Hermes' own
+`i18n_layers.parse_locale_file` (this catches a value that YAML re-reads as a non-string —
+an unquoted `0` parses as a number and `flatten` silently drops it).
+
+Diff shape: removing the 104 added keys and restoring the six corrected values
+reproduces the v0.2.0 file byte for byte.
+
+## Previous release — v0.2.0
+
+Sources: hermes-agent `origin/feat/pluggable-i18n` @ `e163ab83523` — `locales/en.yaml` (3,426 keys),
+`locales/_keys.tui.json` (1,250 keys, English templates from `ui-tui` `i18n-export-en`),
+`locales/_keys.desktop.json` (4,878 keys; 16 intentionally absent, see README *Not translated*).
+
+Coverage: core 3426/3426 · TUI 1250/1250 · desktop 4862/4878. The 374 core and 9 TUI translations shipped in
+v0.1.0 are byte-identical in v0.2.0 (the TUI key `overlay.close` no longer exists upstream and was dropped).
 
 ```
 [core]    pl.yaml keys=3426 == en.yaml keys=3426; same order; placeholder_mismatch=0
