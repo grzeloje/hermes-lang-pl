@@ -284,7 +284,7 @@ connectorsPage:
     signedOutTitle: Zaloguj się do Nous, aby odczytać listę narzędzi.
     signedOutBody: Twoje serwery na tym komputerze nie zostały dotknięte.
     conflictTitle: Ktoś zmienił tę regułę podczas Twojej edycji.
-    conflictBody: Ta osoba wyłączyła {0} włączonych przez Ciebie narzędzi i pozostawiła włączonych {1} narzędzi, które wyłączyłeś(-aś). Twoje zmiany pozostają na ekranie; nic nie zostało zapisane.
+    conflictBody: Twoje zmiany zostają na ekranie; nic nie zapisano.
     conflictReload: Wczytaj ich wersję
     conflictSave: Zapisz, zastępując ich wersję
     saveFailed: Te reguły narzędzi nie zostały zapisane.
@@ -637,112 +637,125 @@ keybinds:
     navigation: Nawigacja
     view: Widok
   actions:
-    keybinds.openPanel: Otwórz skróty klawiszowe
-    nav.commandPalette: Otwórz paletę poleceń
-    nav.commandCenter: Otwórz centrum poleceń
-    nav.settings: Otwórz ustawienia
-    nav.profiles: Otwórz profile
-    nav.capabilities: Otwórz umiejętności
-    nav.messaging: Otwórz komunikatory
-    nav.artifacts: Otwórz artefakty
-    nav.cron: Otwórz zaplanowane zadania
-    nav.agents: Otwórz agentów
-    session.new: Nowa sesja
-    session.newTab: Nowa karta sesji
-    session.newWindow: Nowe okno
-    session.next: Następna sesja
-    session.prev: Poprzednia sesja
-    session.slot.1: Przełącz na ostatnią sesję 1
-    session.slot.2: Przełącz na ostatnią sesję 2
-    session.slot.3: Przełącz na ostatnią sesję 3
-    session.slot.4: Przełącz na ostatnią sesję 4
-    session.slot.5: Przełącz na ostatnią sesję 5
-    session.slot.6: Przełącz na ostatnią sesję 6
-    session.slot.7: Przełącz na ostatnią sesję 7
-    session.slot.8: Przełącz na ostatnią sesję 8
-    session.slot.9: Przełącz na ostatnią sesję 9
-    session.focusSearch: Szukaj sesji
-    session.togglePin: Przypnij / odepnij bieżącą sesję
-    session.archive: Archiwizuj bieżącą sesję
-    conversation.scrollPageUp: Przewiń rozmowę o stronę w górę
-    conversation.scrollPageDown: Przewiń rozmowę o stronę w dół
-    workspace.newWorktree: Nowe worktree
-    workspace.openFolder: Otwórz folder jako projekt
-    composer.focus: Aktywuj pole wiadomości
-    composer.modelPicker: Otwórz wybór modelu
-    composer.voice: Rozpocznij / zakończ rozmowę głosową
-    composer.dictate: Rozpocznij / zakończ dyktowanie
-    composer.reasoningUp: Zwiększ poziom rozumowania
-    composer.reasoningDown: Zmniejsz poziom rozumowania
-    view.toggleSidebar: Przełącz panel sesji
-    view.cycleSidebarGrouping: Zmień grupowanie sesji
-    view.toggleRightSidebar: Przełącz przeglądarkę plików
-    view.toggleReview: Przełącz panel przeglądu zmian
-    view.toggleStatusbar: Przełącz pasek stanu
-    view.toggleTabStrip: Przełącz karty
-    view.toggleProfileRail: Przełącz pasek profili
-    view.toggleSimpleMode: Przełącz tryb prosty
-    view.showFiles: Pokaż przeglądarkę plików
-    view.showBrowser: Otwórz przeglądarkę
-    view.toggleHud: Przełącz tryb HUD
-    hud.snapToPointer: Przenieś HUD do kursora (globalnie, gdy HUD jest otwarty)
-    view.showTerminal: Przełącz terminal
-    view.newTerminal: Nowy terminal
-    view.nextTerminal: Następny terminal
-    view.prevTerminal: Poprzedni terminal
-    view.closeTerminal: Zamknij terminal
-    view.selectionToComposer: Wyślij zaznaczenie do pola wiadomości
-    view.terminalCopy: Kopiuj zaznaczenie z terminala
-    view.terminalPaste: Wklej do terminala
-    view.closeTab: Zamknij kartę
-    view.reopenTab: Otwórz ponownie zamkniętą kartę
-    view.flipPanes: Zamień strony paneli bocznych
-    view.findInPage: Znajdź na stronie
-    view.findNext: Znajdź następne dopasowanie
-    view.findPrevious: Znajdź poprzednie dopasowanie
-    view.tabSlot.1: Przełącz na kartę 1
-    view.tabSlot.2: Przełącz na kartę 2
-    view.tabSlot.3: Przełącz na kartę 3
-    view.tabSlot.4: Przełącz na kartę 4
-    view.tabSlot.5: Przełącz na kartę 5
-    view.tabSlot.6: Przełącz na kartę 6
-    view.tabSlot.7: Przełącz na kartę 7
-    view.tabSlot.8: Przełącz na kartę 8
-    view.tabSlot.9: Przełącz na kartę 9
-    appearance.toggleMode: Przełącz jasny / ciemny
-    profile.default: Przełącz na profil domyślny
-    profile.switch.1: Przełącz na profil 1
-    profile.switch.2: Przełącz na profil 2
-    profile.switch.3: Przełącz na profil 3
-    profile.switch.4: Przełącz na profil 4
-    profile.switch.5: Przełącz na profil 5
-    profile.switch.6: Przełącz na profil 6
-    profile.switch.7: Przełącz na profil 7
-    profile.switch.8: Przełącz na profil 8
-    profile.switch.9: Przełącz na profil 9
-    profile.switch.10: Przełącz na profil 10
-    profile.switch.11: Przełącz na profil 11
-    profile.switch.12: Przełącz na profil 12
-    profile.switch.13: Przełącz na profil 13
-    profile.switch.14: Przełącz na profil 14
-    profile.switch.15: Przełącz na profil 15
-    profile.switch.16: Przełącz na profil 16
-    profile.switch.17: Przełącz na profil 17
-    profile.switch.18: Przełącz na profil 18
-    profile.next: Następny profil
-    profile.prev: Poprzedni profil
-    profile.toggleAll: Przełącz widok wszystkich profili
-    profile.create: Utwórz profil
-    composer.send: Wyślij wiadomość
-    composer.newline: Wstaw nową linię
-    composer.steer: Skoryguj trwającą turę
-    composer.queue: Dodaj wiadomość do kolejki
-    composer.sendQueued: Wyślij następną turę z kolejki
-    composer.mention: Odwołaj się do plików, folderów, adresów URL
-    composer.slash: Paleta poleceń z ukośnikiem
-    composer.help: Szybka pomoc
-    composer.history: Przełączaj okno podręczne / historię
-    composer.cancel: Zamknij okno podręczne · anuluj wykonanie
+    keybinds:
+      openPanel: Otwórz skróty klawiszowe
+    nav:
+      commandPalette: Otwórz paletę poleceń
+      commandCenter: Otwórz centrum poleceń
+      settings: Otwórz ustawienia
+      profiles: Otwórz profile
+      capabilities: Otwórz umiejętności
+      messaging: Otwórz komunikatory
+      artifacts: Otwórz artefakty
+      cron: Otwórz zaplanowane zadania
+      agents: Otwórz agentów
+    session:
+      new: Nowa sesja
+      newTab: Nowa karta sesji
+      newWindow: Nowe okno
+      next: Następna sesja
+      prev: Poprzednia sesja
+      slot:
+        1: Przełącz na ostatnią sesję 1
+        2: Przełącz na ostatnią sesję 2
+        3: Przełącz na ostatnią sesję 3
+        4: Przełącz na ostatnią sesję 4
+        5: Przełącz na ostatnią sesję 5
+        6: Przełącz na ostatnią sesję 6
+        7: Przełącz na ostatnią sesję 7
+        8: Przełącz na ostatnią sesję 8
+        9: Przełącz na ostatnią sesję 9
+      focusSearch: Szukaj sesji
+      togglePin: Przypnij / odepnij bieżącą sesję
+      archive: Archiwizuj bieżącą sesję
+    conversation:
+      scrollPageUp: Przewiń rozmowę o stronę w górę
+      scrollPageDown: Przewiń rozmowę o stronę w dół
+    workspace:
+      newWorktree: Nowe worktree
+      openFolder: Otwórz folder jako projekt
+    composer:
+      focus: Aktywuj pole wiadomości
+      modelPicker: Otwórz wybór modelu
+      voice: Rozpocznij / zakończ rozmowę głosową
+      dictate: Rozpocznij / zakończ dyktowanie
+      reasoningUp: Zwiększ poziom rozumowania
+      reasoningDown: Zmniejsz poziom rozumowania
+      send: Wyślij wiadomość
+      newline: Wstaw nową linię
+      steer: Skoryguj trwającą turę
+      queue: Dodaj wiadomość do kolejki
+      sendQueued: Wyślij następną turę z kolejki
+      mention: Odwołaj się do plików, folderów, adresów URL
+      slash: Paleta poleceń z ukośnikiem
+      help: Szybka pomoc
+      history: Przełączaj okno podręczne / historię
+      cancel: Zamknij okno podręczne · anuluj wykonanie
+    view:
+      toggleSidebar: Przełącz panel sesji
+      cycleSidebarGrouping: Zmień grupowanie sesji
+      toggleRightSidebar: Przełącz przeglądarkę plików
+      toggleReview: Przełącz panel przeglądu zmian
+      toggleStatusbar: Przełącz pasek stanu
+      toggleTabStrip: Przełącz karty
+      toggleProfileRail: Przełącz pasek profili
+      toggleSimpleMode: Przełącz tryb prosty
+      showFiles: Pokaż przeglądarkę plików
+      showBrowser: Otwórz przeglądarkę
+      toggleHud: Przełącz tryb HUD
+      showTerminal: Przełącz terminal
+      newTerminal: Nowy terminal
+      nextTerminal: Następny terminal
+      prevTerminal: Poprzedni terminal
+      closeTerminal: Zamknij terminal
+      selectionToComposer: Wyślij zaznaczenie do pola wiadomości
+      terminalCopy: Kopiuj zaznaczenie z terminala
+      terminalPaste: Wklej do terminala
+      closeTab: Zamknij kartę
+      reopenTab: Otwórz ponownie zamkniętą kartę
+      flipPanes: Zamień strony paneli bocznych
+      findInPage: Znajdź na stronie
+      findNext: Znajdź następne dopasowanie
+      findPrevious: Znajdź poprzednie dopasowanie
+      tabSlot:
+        1: Przełącz na kartę 1
+        2: Przełącz na kartę 2
+        3: Przełącz na kartę 3
+        4: Przełącz na kartę 4
+        5: Przełącz na kartę 5
+        6: Przełącz na kartę 6
+        7: Przełącz na kartę 7
+        8: Przełącz na kartę 8
+        9: Przełącz na kartę 9
+    hud:
+      snapToPointer: Przenieś HUD do kursora (globalnie, gdy HUD jest otwarty)
+    appearance:
+      toggleMode: Przełącz jasny / ciemny
+    profile:
+      default: Przełącz na profil domyślny
+      switch:
+        1: Przełącz na profil 1
+        2: Przełącz na profil 2
+        3: Przełącz na profil 3
+        4: Przełącz na profil 4
+        5: Przełącz na profil 5
+        6: Przełącz na profil 6
+        7: Przełącz na profil 7
+        8: Przełącz na profil 8
+        9: Przełącz na profil 9
+        10: Przełącz na profil 10
+        11: Przełącz na profil 11
+        12: Przełącz na profil 12
+        13: Przełącz na profil 13
+        14: Przełącz na profil 14
+        15: Przełącz na profil 15
+        16: Przełącz na profil 16
+        17: Przełącz na profil 17
+        18: Przełącz na profil 18
+      next: Następny profil
+      prev: Poprzedni profil
+      toggleAll: Przełącz widok wszystkich profili
+      create: Utwórz profil
 findInPage:
   next: Następne dopasowanie
   previous: Poprzednie dopasowanie
@@ -1172,157 +1185,220 @@ settings:
       noneAvailable: Brak zwierzaków, które można teraz włączyć.
       turnOnFailed: Nie udało się włączyć zwierzaka.
       turnOffFailed: Nie udało się wyłączyć zwierzaka.
+    chatTextScaleDesc: Skaluje tekst rozmowy i edytor wiadomości względem skali interfejsu. Paski boczne i elementy sterujące zachowują rozmiar.
+    chatTextScaleTitle: Rozmiar tekstu czatu
+    modelPricingDesc: Pokaż ceny wejścia, wyjścia i odczytu z pamięci podręcznej za milion tokenów w selektorze modeli.
+    modelPricingTitle: Ceny modeli
   fieldLabels:
     model: Domyślny model
     modelContextLength: Okno kontekstu głównego modelu (nadpisanie)
     fallbackProviders: Modele zapasowe
     toolsets: Włączone zestawy narzędzi
     timezone: Strefa czasowa
-    display.personality: Osobowość
-    display.showReasoning: Bloki rozumowania
-    desktop.repoScanEnabled: Automatyczne wykrywanie repozytoriów
-    desktop.repoScanRoots: Foldery wykrywania repozytoriów
-    desktop.repoScanExcludePaths: Wykluczone ścieżki repozytoriów
-    agent.maxTurns: Maks. liczba kroków agenta
-    agent.imageInputMode: Załączniki graficzne
-    agent.apiMaxRetries: Ponowne próby API
-    agent.serviceTier: Poziom usługi
-    agent.toolUseEnforcement: Wymuszanie użycia narzędzi
-    terminal.cwd: Katalog roboczy
-    terminal.backend: Backend wykonywania
-    terminal.timeout: Limit czasu polecenia
-    terminal.persistentShell: Trwała powłoka
-    terminal.envPassthrough: Przekazywanie zmiennych środowiskowych
-    terminal.dockerImage: Obraz Docker
-    terminal.singularityImage: Obraz Singularity
-    terminal.modalImage: Obraz Modal
-    terminal.daytonaImage: Obraz Daytona
+    display:
+      personality: Osobowość
+      showReasoning: Bloki rozumowania
+    desktop:
+      repoScanEnabled: Automatyczne wykrywanie repozytoriów
+      repoScanRoots: Foldery wykrywania repozytoriów
+      repoScanExcludePaths: Wykluczone ścieżki repozytoriów
+    agent:
+      maxTurns: Maks. liczba kroków agenta
+      imageInputMode: Załączniki graficzne
+      apiMaxRetries: Ponowne próby API
+      serviceTier: Poziom usługi
+      toolUseEnforcement: Wymuszanie użycia narzędzi
+    terminal:
+      cwd: Katalog roboczy
+      backend: Backend wykonywania
+      timeout: Limit czasu polecenia
+      persistentShell: Trwała powłoka
+      envPassthrough: Przekazywanie zmiennych środowiskowych
+      dockerImage: Obraz Docker
+      singularityImage: Obraz Singularity
+      modalImage: Obraz Modal
+      daytonaImage: Obraz Daytona
     fileReadMaxChars: Limit odczytu pliku
-    toolOutput.maxBytes: Limit wyjścia terminala
-    toolOutput.maxLines: Limit strony pliku
-    toolOutput.maxLineLength: Limit długości wiersza
-    codeExecution.mode: Tryb wykonywania kodu
-    approvals.mode: Tryb zatwierdzania
-    approvals.timeout: Limit czasu zatwierdzenia
-    approvals.mcpReloadConfirm: Potwierdzaj przeładowania MCP
+    toolOutput:
+      maxBytes: Limit wyjścia terminala
+      maxLines: Limit strony pliku
+      maxLineLength: Limit długości wiersza
+    codeExecution:
+      mode: Tryb wykonywania kodu
+    approvals:
+      mode: Tryb zatwierdzania
+      timeout: Limit czasu zatwierdzenia
+      mcpReloadConfirm: Potwierdzaj przeładowania MCP
     commandAllowlist: Lista dozwolonych poleceń
-    security.redactSecrets: Ukrywaj sekrety
-    security.allowPrivateUrls: Zezwalaj na prywatne URL
-    browser.allowPrivateUrls: Prywatne URL w przeglądarce
-    browser.autoLocalForPrivateUrls: Lokalna przeglądarka dla prywatnych URL
-    browser.useRealProfile: Użyj mojego prawdziwego profilu przeglądarki
-    checkpoints.enabled: Punkty kontrolne plików
-    checkpoints.maxSnapshots: Limit punktów kontrolnych
-    voice.maxRecordingSeconds: Maks. długość nagrania
-    voice.autoTts: Czytaj odpowiedzi na głos
-    voice.voiceChatMode: Tryb rozmowy głosowej
-    voice.gptLive.voice: Głos GPT-Live
-    voice.gptLive.instructions: Persona GPT-Live
-    stt.enabled: Mowa na tekst
-    stt.echoTranscripts: Pokazuj transkrypcje
-    stt.provider: Dostawca zamiany mowy na tekst
-    stt.local.model: Lokalny model transkrypcji
-    stt.local.language: Język transkrypcji
-    stt.openai.model: Model STT OpenAI
-    stt.groq.model: Model STT Groq
-    stt.mistral.model: Model STT Mistral
-    stt.elevenlabs.modelId: Model STT ElevenLabs
-    stt.elevenlabs.languageCode: Język ElevenLabs
-    stt.elevenlabs.tagAudioEvents: Oznaczaj zdarzenia dźwiękowe
-    stt.elevenlabs.diarize: Rozróżnianie mówców
-    tts.provider: Dostawca zamiany tekstu na mowę
-    tts.edge.voice: Głos Edge
-    tts.openai.model: Model TTS OpenAI
-    tts.openai.voice: Głos OpenAI
-    tts.elevenlabs.voiceId: Głos ElevenLabs
-    tts.elevenlabs.modelId: Model ElevenLabs
-    tts.xai.voiceId: Głos xAI (Grok)
-    tts.xai.language: Język xAI
-    tts.xai.speed: Szybkość odtwarzania xAI
-    tts.xai.autoSpeechTags: Automatyczne tagi mowy xAI
-    tts.xai.optimizeStreamingLatency: Optymalizacja opóźnienia strumieniowania xAI
-    tts.xai.sampleRate: Częstotliwość próbkowania xAI
-    tts.xai.bitRate: Przepływność xAI
-    tts.minimax.model: Model TTS MiniMax
-    tts.minimax.voiceId: Głos MiniMax
-    tts.mistral.model: Model TTS Mistral
-    tts.mistral.voiceId: Głos Mistral
-    tts.gemini.model: Model TTS Gemini
-    tts.gemini.voice: Głos Gemini
-    tts.neutts.model: Model NeuTTS
-    tts.neutts.device: Urządzenie NeuTTS
-    tts.kittentts.model: Model KittenTTS
-    tts.kittentts.voice: Głos KittenTTS
-    tts.piper.voice: Głos Piper
-    tts.deepinfra.model: Model TTS DeepInfra
-    tts.deepinfra.voice: Głos DeepInfra
-    memory.memoryEnabled: Pamięć trwała
-    memory.userProfileEnabled: Profil użytkownika
-    memory.memoryCharLimit: Budżet pamięci
-    memory.userCharLimit: Budżet profilu
-    memory.provider: Dostawca pamięci
-    context.engine: Silnik kontekstu
-    compression.enabled: Automatyczna kompresja
-    compression.threshold: Próg kompresji
-    compression.codexGpt55Autoraise: Automatyczne podnoszenie kompresji Codex
-    compression.targetRatio: Cel kompresji
-    compression.protectLastN: Chronione ostatnie wiadomości
-    auxiliary.compression.timeout: Limit czasu modelu kompresji (s)
-    delegation.model: Model subagentów
-    delegation.provider: Dostawca subagentów
-    delegation.maxIterations: Limit tur subagenta
-    delegation.maxConcurrentChildren: Równoległe subagenty
-    delegation.childTimeoutSeconds: Limit czasu subagenta
-    delegation.reasoningEffort: Wysiłek rozumowania subagentów
-    updates.nonInteractiveLocalChanges: Lokalne zmiany przy aktualizacji z aplikacji
+    security:
+      redactSecrets: Ukrywaj sekrety
+      allowPrivateUrls: Zezwalaj na prywatne URL
+    browser:
+      allowPrivateUrls: Prywatne URL w przeglądarce
+      autoLocalForPrivateUrls: Lokalna przeglądarka dla prywatnych URL
+      useRealProfile: Użyj mojego prawdziwego profilu przeglądarki
+    checkpoints:
+      enabled: Punkty kontrolne plików
+      maxSnapshots: Limit punktów kontrolnych
+    voice:
+      maxRecordingSeconds: Maks. długość nagrania
+      autoTts: Czytaj odpowiedzi na głos
+      voiceChatMode: Tryb rozmowy głosowej
+      gptLive:
+        voice: Głos GPT-Live
+        instructions: Persona GPT-Live
+    stt:
+      enabled: Mowa na tekst
+      echoTranscripts: Pokazuj transkrypcje
+      provider: Dostawca zamiany mowy na tekst
+      local:
+        model: Lokalny model transkrypcji
+        language: Język transkrypcji
+      openai:
+        model: Model STT OpenAI
+      groq:
+        model: Model STT Groq
+      mistral:
+        model: Model STT Mistral
+      elevenlabs:
+        modelId: Model STT ElevenLabs
+        languageCode: Język ElevenLabs
+        tagAudioEvents: Oznaczaj zdarzenia dźwiękowe
+        diarize: Rozróżnianie mówców
+    tts:
+      provider: Dostawca zamiany tekstu na mowę
+      edge:
+        voice: Głos Edge
+      openai:
+        model: Model TTS OpenAI
+        voice: Głos OpenAI
+      elevenlabs:
+        voiceId: Głos ElevenLabs
+        modelId: Model ElevenLabs
+      xai:
+        voiceId: Głos xAI (Grok)
+        language: Język xAI
+        speed: Szybkość odtwarzania xAI
+        autoSpeechTags: Automatyczne tagi mowy xAI
+        optimizeStreamingLatency: Optymalizacja opóźnienia strumieniowania xAI
+        sampleRate: Częstotliwość próbkowania xAI
+        bitRate: Przepływność xAI
+      minimax:
+        model: Model TTS MiniMax
+        voiceId: Głos MiniMax
+      mistral:
+        model: Model TTS Mistral
+        voiceId: Głos Mistral
+      gemini:
+        model: Model TTS Gemini
+        voice: Głos Gemini
+      neutts:
+        model: Model NeuTTS
+        device: Urządzenie NeuTTS
+      kittentts:
+        model: Model KittenTTS
+        voice: Głos KittenTTS
+      piper:
+        voice: Głos Piper
+      deepinfra:
+        model: Model TTS DeepInfra
+        voice: Głos DeepInfra
+    memory:
+      memoryEnabled: Pamięć trwała
+      userProfileEnabled: Profil użytkownika
+      memoryCharLimit: Budżet pamięci
+      userCharLimit: Budżet profilu
+      provider: Dostawca pamięci
+    context:
+      engine: Silnik kontekstu
+    compression:
+      enabled: Automatyczna kompresja
+      threshold: Próg kompresji
+      codexGpt55Autoraise: Automatyczne podnoszenie kompresji Codex
+      targetRatio: Cel kompresji
+      protectLastN: Chronione ostatnie wiadomości
+    auxiliary:
+      compression:
+        timeout: Limit czasu modelu kompresji (s)
+    delegation:
+      model: Model subagentów
+      provider: Dostawca subagentów
+      maxIterations: Limit tur subagenta
+      maxConcurrentChildren: Równoległe subagenty
+      childTimeoutSeconds: Limit czasu subagenta
+      reasoningEffort: Wysiłek rozumowania subagentów
+    updates:
+      nonInteractiveLocalChanges: Lokalne zmiany przy aktualizacji z aplikacji
   fieldDescriptions:
     model: Używany w nowych czatach, chyba że wybierzesz inny model w polu wiadomości.
     modelContextLength: Nadpisuje wykryte okno kontekstu wyłącznie GŁÓWNEGO modelu czatu (w tokenach). Zostaw 0, aby użyć wartości wykrytej dla wybranego modelu. Nie wpływa na modele pomocnicze/MoA.
     fallbackProviders: Zapasowe wpisy dostawca:model używane, gdy domyślny model zawiedzie.
-    display.personality: Domyślny styl asystenta w nowych sesjach.
-    display.showReasoning: Pokazuj sekcje rozumowania, gdy backend je udostępnia.
-    desktop.repoScanEnabled: Skanuj lokalne foldery w poszukiwaniu repozytoriów Git do pokazania w Projektach.
-    desktop.repoScanRoots: Foldery do skanowania. Zostaw puste, aby skanować katalog domowy.
-    desktop.repoScanExcludePaths: Foldery (wraz z podfolderami) pomijane podczas wykrywania repozytoriów.
+    display:
+      personality: Domyślny styl asystenta w nowych sesjach.
+      showReasoning: Pokazuj sekcje rozumowania, gdy backend je udostępnia.
+    desktop:
+      repoScanEnabled: Skanuj lokalne foldery w poszukiwaniu repozytoriów Git do pokazania w Projektach.
+      repoScanRoots: Foldery do skanowania. Zostaw puste, aby skanować katalog domowy.
+      repoScanExcludePaths: Foldery (wraz z podfolderami) pomijane podczas wykrywania repozytoriów.
     timezone: Identyfikator strefy czasowej IANA. Puste = strefa czasowa systemu.
-    browser.useRealProfile: Lokalne przeglądanie korzysta z Twoich prawdziwych logowań. Hermes kopiuje profil domyślnej przeglądarki (ciasteczka, logowania, preferencje) do zarządzanej migawki i steruje nią za pomocą dołączonego Chromium — Twój aktywny profil nigdy nie jest otwierany bezpośrednio, a kopia jest odświeżana z niego przy każdym uruchomieniu. Pozwala też agentowi na żądanie otworzyć lokalną sesję z prawdziwym profilem, nawet gdy skonfigurowano backend przeglądarki w chmurze. Obsługiwane są tylko przeglądarki oparte na Chromium (Chrome, Edge, Brave, Brave Origin, Chromium); inna domyślna przeglądarka kończy się czytelnym komunikatem o błędzie. Domyślnie wyłączone.
-    agent.imageInputMode: Określa, jak załączniki graficzne są wysyłane do modelu.
-    agent.maxTurns: Górny limit tur z wywołaniami narzędzi, po którym Hermes przerywa przebieg.
-    terminal.cwd: Domyślny folder projektu dla pracy narzędzi i terminala.
-    terminal.persistentShell: Zachowuj stan powłoki między poleceniami, gdy backend to obsługuje.
-    terminal.envPassthrough: Zmienne środowiskowe przekazywane do wykonywania narzędzi.
-    terminal.dockerImage: Obraz kontenera używany, gdy backendem wykonywania jest Docker.
-    terminal.singularityImage: Obraz używany, gdy backendem wykonywania jest Singularity.
-    terminal.modalImage: Obraz używany, gdy backendem wykonywania jest Modal.
-    terminal.daytonaImage: Obraz używany, gdy backendem wykonywania jest Daytona.
-    codeExecution.mode: Jak ściśle wykonywanie kodu jest ograniczone do bieżącego projektu.
+    browser:
+      useRealProfile: Lokalne przeglądanie korzysta z Twoich prawdziwych logowań. Hermes kopiuje profil domyślnej przeglądarki (ciasteczka, logowania, preferencje) do zarządzanej migawki i steruje nią za pomocą dołączonego Chromium — Twój aktywny profil nigdy nie jest otwierany bezpośrednio, a kopia jest odświeżana z niego przy każdym uruchomieniu. Pozwala też agentowi na żądanie otworzyć lokalną sesję z prawdziwym profilem, nawet gdy skonfigurowano backend przeglądarki w chmurze. Obsługiwane są tylko przeglądarki oparte na Chromium (Chrome, Edge, Brave, Brave Origin, Chromium); inna domyślna przeglądarka kończy się czytelnym komunikatem o błędzie. Domyślnie wyłączone.
+    agent:
+      imageInputMode: Określa, jak załączniki graficzne są wysyłane do modelu.
+      maxTurns: Górny limit tur z wywołaniami narzędzi, po którym Hermes przerywa przebieg.
+    terminal:
+      cwd: Domyślny folder projektu dla pracy narzędzi i terminala.
+      persistentShell: Zachowuj stan powłoki między poleceniami, gdy backend to obsługuje.
+      envPassthrough: Zmienne środowiskowe przekazywane do wykonywania narzędzi.
+      dockerImage: Obraz kontenera używany, gdy backendem wykonywania jest Docker.
+      singularityImage: Obraz używany, gdy backendem wykonywania jest Singularity.
+      modalImage: Obraz używany, gdy backendem wykonywania jest Modal.
+      daytonaImage: Obraz używany, gdy backendem wykonywania jest Daytona.
+    codeExecution:
+      mode: Jak ściśle wykonywanie kodu jest ograniczone do bieżącego projektu.
     fileReadMaxChars: Maksymalna liczba znaków, które Hermes może odczytać w jednym żądaniu pliku.
-    approvals.mode: Jak Hermes obsługuje polecenia wymagające wyraźnego zatwierdzenia.
-    approvals.timeout: Jak długo prośby o zatwierdzenie czekają, zanim upłynie ich limit czasu.
-    security.redactSecrets: Ukrywaj wykryte sekrety w treści widocznej dla modelu, gdy to możliwe.
-    checkpoints.enabled: Twórz migawki do przywracania przed edycją plików.
-    memory.memoryEnabled: Zapisuj trwałe wspomnienia, które mogą pomóc w przyszłych sesjach.
-    memory.userProfileEnabled: Utrzymuj zwięzły profil preferencji użytkownika.
-    context.engine: Strategia zarządzania długimi rozmowami w pobliżu limitu kontekstu.
-    compression.enabled: Streszczaj starszy kontekst, gdy rozmowy stają się duże.
-    compression.codexGpt55Autoraise: Podnoś kompresję do 85% dla obsługiwanych modeli ChatGPT Codex OAuth.
-    auxiliary.compression.timeout: Liczba sekund oczekiwania na pomocniczy model kompresji na jedno wywołanie (domyślnie 120). Zwiększ dla wolnych modeli lokalnych.
-    voice.autoTts: Automatycznie odczytuj odpowiedzi asystenta.
-    voice.voiceChatMode: 'chained: mowa na tekst → Hermes → tekst na mowę z dostawcami poniżej. gpt-live: jeden pełnodupleksowy model głosowy OpenAI (gpt-live-1) słucha i mówi, a każde prawdziwe żądanie przekazuje do Hermesa — odpowiada wybrany przez Ciebie model z pełnym zestawem narzędzi. Wymaga klucza API OpenAI; warstwa głosowa kosztuje 0,05 USD za minutę.'
-    voice.gptLive.voice: Głos dla trybu GPT-Live. Akceptowane są własne identyfikatory głosów.
-    voice.gptLive.instructions: Dodatkowe zdania dla persony głosowej na żywo (ton, tempo, język). Hermes zachowuje własny prompt systemowy.
-    tts.xai.voiceId: Identyfikator głosu xAI (np. eve) lub własny identyfikator głosu.
-    tts.xai.language: Kod języka mowy (np. en, pt-BR) lub "auto" dla automatycznego wykrywania.
-    tts.xai.speed: Szybkość odtwarzania. 0.7 = wolniej, 1.0 = normalnie, 1.5 = szybciej.
-    tts.xai.autoSpeechTags: Pozwól LLM wstawiać ekspresyjne tagi audio ([laughing], [sighs]) do tekstu przed syntezą.
-    tts.xai.optimizeStreamingLatency: Kompromis między opóźnieniem a jakością. 0 = najlepsza jakość, 2 = najniższe opóźnienie.
-    tts.xai.sampleRate: Częstotliwość próbkowania dźwięku w Hz. Wyższa = lepsza jakość, większe pliki.
-    tts.xai.bitRate: Przepływność MP3 w b/s. Dotyczy tylko kodeka mp3.
-    tts.neutts.device: Lokalne urządzenie inferencji dla NeuTTS.
-    stt.enabled: Włącz lokalną lub dostarczaną przez dostawcę transkrypcję mowy.
-    stt.echoTranscripts: Publikuj surową transkrypcję 🎙️ wiadomości głosowych z powrotem na czacie.
-    stt.elevenlabs.languageCode: Opcjonalny kod języka ISO-639-3. Puste pozwala ElevenLabs wykryć język automatycznie.
-    updates.nonInteractiveLocalChanges: Gdy Hermes aktualizuje się z aplikacji (bez pytania w terminalu), zachowaj lokalne zmiany w źródłach (stash) lub odrzuć je (discard). Aktualizacje z terminala zawsze pytają.
+    approvals:
+      mode: Jak Hermes obsługuje polecenia wymagające wyraźnego zatwierdzenia.
+      timeout: Jak długo prośby o zatwierdzenie czekają, zanim upłynie ich limit czasu.
+    security:
+      redactSecrets: Ukrywaj wykryte sekrety w treści widocznej dla modelu, gdy to możliwe.
+    checkpoints:
+      enabled: Twórz migawki do przywracania przed edycją plików.
+    memory:
+      memoryEnabled: Zapisuj trwałe wspomnienia, które mogą pomóc w przyszłych sesjach.
+      userProfileEnabled: Utrzymuj zwięzły profil preferencji użytkownika.
+    context:
+      engine: Strategia zarządzania długimi rozmowami w pobliżu limitu kontekstu.
+    compression:
+      enabled: Streszczaj starszy kontekst, gdy rozmowy stają się duże.
+      codexGpt55Autoraise: Podnoś kompresję do 85% dla obsługiwanych modeli ChatGPT Codex OAuth.
+    auxiliary:
+      compression:
+        timeout: Liczba sekund oczekiwania na pomocniczy model kompresji na jedno wywołanie (domyślnie 120). Zwiększ dla wolnych modeli lokalnych.
+    voice:
+      autoTts: Automatycznie odczytuj odpowiedzi asystenta.
+      voiceChatMode: 'chained: mowa na tekst → Hermes → tekst na mowę z dostawcami poniżej. gpt-live: jeden pełnodupleksowy model głosowy OpenAI (gpt-live-1) słucha i mówi, a każde prawdziwe żądanie przekazuje do Hermesa — odpowiada wybrany przez Ciebie model z pełnym zestawem narzędzi. Wymaga klucza API OpenAI; warstwa głosowa kosztuje 0,05 USD za minutę.'
+      gptLive:
+        voice: Głos dla trybu GPT-Live. Akceptowane są własne identyfikatory głosów.
+        instructions: Dodatkowe zdania dla persony głosowej na żywo (ton, tempo, język). Hermes zachowuje własny prompt systemowy.
+    tts:
+      xai:
+        voiceId: Identyfikator głosu xAI (np. eve) lub własny identyfikator głosu.
+        language: Kod języka mowy (np. en, pt-BR) lub "auto" dla automatycznego wykrywania.
+        speed: Szybkość odtwarzania. 0.7 = wolniej, 1.0 = normalnie, 1.5 = szybciej.
+        autoSpeechTags: Pozwól LLM wstawiać ekspresyjne tagi audio ([laughing], [sighs]) do tekstu przed syntezą.
+        optimizeStreamingLatency: Kompromis między opóźnieniem a jakością. 0 = najlepsza jakość, 2 = najniższe opóźnienie.
+        sampleRate: Częstotliwość próbkowania dźwięku w Hz. Wyższa = lepsza jakość, większe pliki.
+        bitRate: Przepływność MP3 w b/s. Dotyczy tylko kodeka mp3.
+      neutts:
+        device: Lokalne urządzenie inferencji dla NeuTTS.
+    stt:
+      enabled: Włącz lokalną lub dostarczaną przez dostawcę transkrypcję mowy.
+      echoTranscripts: Publikuj surową transkrypcję 🎙️ wiadomości głosowych z powrotem na czacie.
+      elevenlabs:
+        languageCode: Opcjonalny kod języka ISO-639-3. Puste pozwala ElevenLabs wykryć język automatycznie.
+    updates:
+      nonInteractiveLocalChanges: Gdy Hermes aktualizuje się z aplikacji (bez pytania w terminalu), zachowaj lokalne zmiany w źródłach (stash) lub odrzuć je (discard). Aktualizacje z terminala zawsze pytają.
   uninstallSection:
     dangerZone: Strefa niebezpieczna
     checkingInstalled: Sprawdzanie, co jest zainstalowane…
@@ -1430,6 +1506,9 @@ settings:
     voiceShortcutHintTitle: Skrót nagrywania głosu
     voiceShortcutHintDesc: Skrót nagrywania głosu ustaw w Ustawienia → Skróty klawiszowe („Rozpocznij / zatrzymaj rozmowę głosową”). Wartość konfiguracji voice.record_key dotyczy tylko CLI i TUI.
     showOptions: Pokaż opcje
+    keepAwakeAlways: Zawsze
+    keepAwakeOff: Wyłączone
+    keepAwakeWhileWorking: Podczas pracy
   hudModifier:
     title: Stuknij, aby wywołać HUD
     description: Naciśnij i puść ⌘ + Option na Macu lub Ctrl + Alt na Windows/Linux, aby wywołać HUD na wierzch z dowolnej aplikacji. Domyślnie wyłączone; dotyczy tylko tego urządzenia.
@@ -1821,6 +1900,9 @@ settings:
       curator:
         label: Kurator
         hint: Przegląd użycia umiejętności
+    speed: Szybkość
+    speedStandard: Standardowa
+    staleAuxDismiss: Nie pokazuj ponownie
   localModels:
     connectionChanged: Połączenie z lokalnymi modelami zmienione
     title: Modele lokalne
@@ -2133,10 +2215,10 @@ settings:
         messageHeadroom: 🔴 Osiągnięto miesięczny limit wydatków — pozostało {0} $ zapasu.
       rateLimited:
         title: Zbyt wiele obciążeń w tej chwili
-        message: 🟡 Zbyt wiele obciążeń w tej chwili (spróbuj ponownie za ~{0} min). To nie jest błąd płatności.
+        message: 🟡 Zbyt wiele obciążeń w tej chwili. To nie jest błąd płatności.
       stripeUnavailable:
         title: Stripe ma problemy
-        message: Stripe ma problemy — spróbuj ponownie za ~{0} min
+        message: Stripe ma problemy — spróbuj ponownie za chwilę
       upgradeCapExceeded:
         title: Osiągnięto dzienny limit zmian planu
         message: Osiągnięto dzienny limit zmian planu — spróbuj ponownie jutro
@@ -2289,7 +2371,7 @@ settings:
       needsSetupConfirmDescriptionGeneric: Ten backend nie jest jeszcze skonfigurowany. Sesje rozpoczęte po tej zmianie nie będą mieć narzędzi terminala ani plików, dopóki konfiguracja nie zostanie ukończona.
       needsSetupConfirmAction: Wybierz mimo to
       unavailableTitle: Polecenia terminala są niedostępne
-      unavailableMessage: 'Hermes nie może teraz uruchamiać poleceń powłoki: {0} nie jest gotowy. Przełącz się na Lokalny albo dokończ konfigurację tego backendu i spróbuj ponownie.'
+      unavailableMessage: 'Hermes nie może teraz wykonywać poleceń powłoki: {0} nie jest gotowy. Przełącz się na Lokalny lub zakończ konfigurację {0} i spróbuj ponownie.'
       openBackendSettings: Otwórz ustawienia terminala
       useLocal: Użyj Lokalnego
       switchedToLocal: Polecenia terminala działają teraz lokalnie. Dotyczy nowych sesji.
@@ -2401,6 +2483,7 @@ skills:
       version_too_old: za stara wersja
       missing_app: brak aplikacji
       unknown: stan nieznany
+      unsupported_gpu: GPU nieobsługiwane
     catalogTitle: Katalog wtyczek
     catalogBrowse: Przeglądaj
     catalogHide: Ukryj przeglądarkę katalogu
@@ -2481,7 +2564,7 @@ skills:
     updateStarted: Aktualizowanie zainstalowanych umiejętności...
     actionFailed: Akcja na umiejętności nie powiodła się
     installBlockedTitle: Nie udało się zainstalować {0}
-    installBlockedMessage: Skan bezpieczeństwa oznaczył do sprawdzenia elementy ({0}). Przeczytaj wynik skanu, zanim zdecydujesz, czy ufasz autorowi.
+    installBlockedMessage: Skan bezpieczeństwa wskazał ryzykowne wzorce do przejrzenia, a umiejętność pochodzi ze źródła niezweryfikowanego. Przeczytaj wynik skanu, zanim zdecydujesz, czy ufać autorowi.
     viewScan: Zobacz skan
     openLog: Otwórz dziennik
     actionLog: Dziennik akcji
@@ -2762,6 +2845,7 @@ commandCenter:
     actionFailed: Nie udało się uruchomić {0}
     running: W toku...
     viewLog: Dziennik akcji
+  toggleBrowser: Przełącz przeglądarkę
 messaging:
   search: Szukaj komunikatorów...
   loading: Ładowanie platform komunikatorów...
@@ -2954,6 +3038,15 @@ messaging:
     WHATSAPP_ALLOWED_USERS:
       label: Dozwoleni użytkownicy WhatsApp
       help: Zalecane. Numery telefonów lub ID WhatsApp oddzielone przecinkami.
+  addListEntry: Dodaj kolejny
+  listEntryPlaceholder: Podaj identyfikator
+  removeListEntry: Usuń
+  statusFilter:
+    all: Wszystkie
+    bad: Błędy
+    good: Połączone
+    muted: Nieaktywne
+    warn: Wymaga uwagi
 webhooks:
   search: Szukaj webhooków...
   loading: Ładowanie webhooków...
@@ -3113,9 +3206,7 @@ profiles:
   soulDesc: Prompt systemowy i instrukcje osobowości wbudowane w ten profil.
   soulMissing: Ten profil nie ma jeszcze pliku SOUL.md. Dodaj instrukcje poniżej i zapisz, aby go utworzyć. Presety osobowości w config.yaml są zarządzane osobno.
   soulOptional: opcjonalnie
-  soulPlaceholder: 'Prompt systemowy / osobowość dla tego profilu.
-
-    Zostaw puste, aby zachować wartość domyślną ({0}).'
+  soulPlaceholder: "Prompt systemowy / osobowość dla tego profilu.\nZostaw puste, aby zachować wartość domyślną ({0})."
   soulPlaceholderCloned: sklonowaną
   soulPlaceholderEmpty: pustą
   unsavedChanges: Niezapisane zmiany
@@ -3205,14 +3296,14 @@ cron:
     every-15-minutes: Co 15 minut
     custom: Składnia cron lub język naturalny
   days:
-    '0': Niedziela
-    '1': Poniedziałek
-    '2': Wtorek
-    '3': Środa
-    '4': Czwartek
-    '5': Piątek
-    '6': Sobota
-    '7': Niedziela
+    0: Niedziela
+    1: Poniedziałek
+    2: Wtorek
+    3: Środa
+    4: Czwartek
+    5: Piątek
+    6: Sobota
+    7: Niedziela
   dayFallback: dzień {0}
   everyDayAt: Codziennie o {0}
   weekdaysAt: W dni robocze o {0}
@@ -3497,6 +3588,7 @@ sidebar:
     reorder: Zmień kolejność {0}
     showAllCount: Pokaż wszystkie sesje ({0})
     back: Wszystkie projekty
+    createdInPreviousContext: Projekt utworzono przy poprzednim połączeniu lub w poprzednim profilu. Przełącz się z powrotem, aby go znaleźć; plik IDEA.md nie został zapisany.
   newSessionIn: Nowa sesja w {0}
   showMoreIn: Pokaż jeszcze {0} w {1}
   loading: Ładowanie…
@@ -3678,14 +3770,16 @@ composer:
     /debug: Wyślij raport diagnostyczny (informacje o systemie + logi) i uzyskaj linki do udostępnienia
     /model: Przełącz model dla tej sesji
   hotkeyDescs:
-    composer.mention: odwołaj się do plików, folderów, URL-i, git
-    composer.slash: paleta poleceń z ukośnikiem
-    composer.help: ta szybka pomoc (usuń, aby zamknąć)
-    composer.sendNewline: wyślij · Shift+Enter dla nowej linii
-    composer.sendQueued: wyślij następną turę z kolejki
-    keybinds.openPanel: wszystkie skróty klawiszowe
-    composer.cancel: zamknij okienko · anuluj przebieg
-    composer.history: przełączaj okienko / historię
+    composer:
+      mention: odwołaj się do plików, folderów, URL-i, git
+      slash: paleta poleceń z ukośnikiem
+      help: ta szybka pomoc (usuń, aby zamknąć)
+      sendNewline: wyślij · Shift+Enter dla nowej linii
+      sendQueued: wyślij następną turę z kolejki
+      cancel: zamknij okienko · anuluj przebieg
+      history: przełączaj okienko / historię
+    keybinds:
+      openPanel: wszystkie skróty klawiszowe
   attachUrlTitle: Załącz URL
   attachUrlDesc: Hermes pobierze stronę i dołączy ją jako kontekst do tej tury.
   urlPlaceholder: https://example.com/post
@@ -3782,6 +3876,11 @@ composer:
       label: Wyjaśnij to
       description: Wyjaśnij krok po kroku, jak działa zaznaczony kod, i wskaż kluczowe pliki.
       text: Wyjaśnij, jak to działa, i wskaż mi kluczowe pliki.
+  queueCollapse: Zwiń
+  queueExpand: Rozwiń
+  queuedTerminalSelectionExpiredBody: To zakolejkowane zaznaczenie terminala nie jest już dostępne. Zaznacz wiersze ponownie (Ctrl/Cmd+L) i zakolejkuj wiadomość jeszcze raz.
+  terminalSelectionMissingBody: Zaznacz wiersze terminala ponownie (Ctrl/Cmd+L) przed wysłaniem — ten element nie ma tekstu źródłowego.
+  terminalSelectionMissingTitle: Zaznaczenie terminala niedostępne
 statusStack:
   hideStack: Ukryj stos stanu
   showStack: Pokaż stos stanu
@@ -3930,6 +4029,7 @@ statusStack:
     switchTo: Przełącz na {0}
     switchFailed: Nie udało się przełączyć na {0}
     worktrees: Worktree
+    readOnlyScope: Widok tylko do odczytu — stage, revert i commit dotyczą Niezacommitowanych
 updates:
   discontinuedTitle: Ta kompilacja Hermes nie jest już wspierana
   discontinuedBody: Ta kompilacja Hermes nie jest już wspierana i może przestać działać — odinstaluj ją. Twoje dane pozostają na dysku.
@@ -4070,6 +4170,7 @@ updates:
   versionDetailsRuntimeExternal: Zewnętrzne (używa środowiska z komputera)
   versionDetailsInstallId: ID instalacji
   versionDetailsUncommittedChanges: niezatwierdzone zmiany
+  copyFullLog: Kopiuj pełny dziennik zmian
 handoffTour:
   profileTitle: Twoje pierwsze zadanie działa na profilu domyślnym
   profileText: Ten pasek przełącza profile. Podświetlony teraz to profil domyślny, w którym znajduje się sesja zadania. Drugi to profil konfiguracyjny, w którym znajduje się czat powitalny.
@@ -4078,10 +4179,7 @@ handoffTour:
   stayTitle: Hermes jest na jedno kliknięcie
   stayText: Przełącz się na profil konfiguracyjny i otwórz „Witaj w Hermes”, gdy będziesz potrzebować pomocy. Ten czat zostaje tam na stałe.
 guidedGreeting:
-  line: 'Cześć, wejdź śmiało. Jestem Hermes. Daj mi dwie minuty na urządzenie tego miejsca pod Ciebie, a potem weźmiemy się za coś, co naprawdę chcesz mieć zrobione.
-
-
-    Ale najpierw — jak mam się do Ciebie zwracać?'
+  line: "Cześć, wejdź śmiało. Jestem Hermes. Daj mi dwie minuty na urządzenie tego miejsca pod Ciebie, a potem weźmiemy się za coś, co naprawdę chcesz mieć zrobione.\n\nAle najpierw — jak mam się do Ciebie zwracać?"
   nameSuggestion: (Mogę też po prostu mówić do Ciebie {0}, jeśli wolisz.)
 install:
   stageStates:
@@ -4321,6 +4419,10 @@ modelVisibility:
   addProvider: Dodaj dostawcę…
   addCustomModel: Dodaj model niestandardowy
   removeCustomModel: Usuń model niestandardowy
+  resetAction: Zresetuj
+  resetConfirm: Przywrócić domyślną widoczność modeli?
+  resetDescription: Wyczyszczone zostaną Twoje wybory modeli pokazywanych i ukrywanych, a każdy dostawca odzyska swoją domyślną listę. Dodane przez Ciebie modele własne zostaną zachowane i widoczne.
+  resetToDefaults: Przywróć domyślne
 shell:
   windowControls: Sterowanie oknem
   paneControls: Sterowanie panelami
@@ -4332,6 +4434,13 @@ shell:
     followDefault: Użyj domyślnego z ustawień
     refreshModels: Odśwież modele
     fast: Szybki
+    addFavorite: Dodaj do ulubionych
+    cacheRead: odczyt z pamięci podręcznej
+    favoriteShortcut: ⇧ Kliknij
+    favorites: Ulubione
+    free: darmowy
+    priceTitle: Wejście {0}/Mtok · Wyjście {1}/Mtok · Odczyt z pamięci podręcznej {2}/Mtok
+    removeFavorite: Usuń z ulubionych
   modelOptions:
     noOptions: Brak opcji dla tego modelu
     options: Opcje
@@ -4348,6 +4457,8 @@ shell:
     sendsOnRoute: wysyła {0} na tej trasie
     updateFailed: Aktualizacja opcji modelu nie powiodła się
     fastFailed: Aktualizacja trybu szybkiego nie powiodła się
+    ultrafast: Ultraszybki
+    useStandardSpeed: Użyj standardowej prędkości
   gatewayMenu:
     gateway: Gateway
     connected: Połączono
@@ -4469,6 +4580,7 @@ shell:
     modelPinned: przypięty przez Ciebie; nowe czaty używają go zamiast domyślnego z ustawień
     modelTitle: 'Model · {0}: {1}'
     providerModelTitle: '{0} · {1}'
+    compressions: 'Kompresje: {0}'
 rightSidebar:
   aria: Prawy panel boczny
   panelsAria: Panele prawego panelu bocznego
@@ -4510,6 +4622,9 @@ rightSidebar:
   terminalCloseOthers: Zamknij pozostałe
   terminalCloseAll: Zamknij wszystkie
   addToChat: Dodaj do czatu
+  terminalOpenInteractive: Otwórz nowy terminal
+  terminalReadOnly: Wyjście tylko do odczytu
+  terminalReadOnlyHelp: Aby odpowiedzieć na pytanie, zatrzymaj polecenie w tle i uruchom je w nowym terminalu. Nowy terminal otwiera osobną powłokę; nie łączy się z tym procesem.
 preview:
   tab: Podgląd
   closePane: Zamknij panel podglądu
@@ -4613,6 +4728,12 @@ preview:
     commentTitle: Komentarz {0}
     saveComment: Zapisz
     cancelComment: Anuluj komentarz
+  missingBody: Plik {0} został usunięty, przeniesiony albo wyczyszczono jego lokalizację tymczasową. Tej zakładki nie przywrócimy przy następnym uruchomieniu.
+  missingTarget: Ta ścieżka nie istnieje na tym komputerze
+  missingTitle: Plik już nie istnieje
+  pin: Przypnij do obszaru roboczego
+  saveScopeChanged: Aby zapisać tę wersję roboczą, wróć do pierwotnego połączenia i profilu.
+  unpin: Odepnij od obszaru roboczego
 interfaceMode:
   title: Tryb interfejsu
   hint: Zmienia to, co jest widoczne, a nie to, co Hermes potrafi.
@@ -4669,6 +4790,7 @@ zones:
   notExpressible: to rozmieszczenie jest zazębione (wiatraczek) — nie da się go jeszcze wyrazić jako zagnieżdżonych podziałów
   zoneCount: 'Strefy: {0}'
   tabCount: 'Karty: {0}'
+  zoneMenuLabel: Opcje strefy dla {0}
 contextMenu:
   link:
     openInApp: Otwórz w przeglądarce w aplikacji
@@ -4819,6 +4941,9 @@ assistant:
       free_tier_refused:
         title: Hermes nie mógł tego wysłać bez logowania
         body: Logowanie kontem Nous jest bezpłatne.
+      no_reply:
+        body: Hermes zakończył tę turę bez odpowiedzi. Spróbuj ponownie, aby wysłać ją jeszcze raz.
+        title: Odpowiedź nie została zakończona
     errorAuthKinds:
       api_key:
         title: '{0} odrzucił Twój klucz API'
@@ -4871,6 +4996,7 @@ assistant:
     goForward: Przejdź dalej
     sendEdited: Wyślij zmienioną wiadomość
     attachingFile: Załączanie…
+    responseStopped: Odpowiedź zatrzymana
   approval:
     gatewayDisconnected: Hermes jest teraz offline. Polecenie nadal czeka na Twoją odpowiedź (do upływu limitu czasu zatwierdzenia). Połącz się ponownie, a potem wyślij ją jeszcze raz.
     sendFailed: Nie można wysłać Twojej odpowiedzi
@@ -4905,6 +5031,9 @@ assistant:
     lateAnswerTip: Przygotuj tę odpowiedź jako szkic kolejnej wiadomości
     lateAnswerHint: Ten prompt już nie czeka na odpowiedź. Wybierz opcję, aby przygotować ją jako szkic kolejnej wiadomości.
     notDelivered: To pytanie nie dotarło do aplikacji, więc nie można na nie tutaj odpowiedzieć. Naciśnij Zatrzymaj, aby zakończyć turę, a potem odpowiedz na czacie.
+    multiSelectHint: Zaznacz wszystkie pasujące
+    noAnswer: Brak odpowiedzi
+    singleSelectHint: Wybierz jedno
   catalogInstall:
     preparing: Przygotowywanie instalacji…
     install: Zainstaluj
@@ -5117,7 +5246,7 @@ prompts:
   secretPlaceholder: wartość sekretu
   vaultUnlockSendFailed: Nie można wysłać hasła głównego
   vaultUnlockTitle: Odblokuj {0}
-  vaultUnlockDesc: Agent chce zalogować się do witryny za pomocą loginu zapisanego w {0}. Wpisz hasło główne, aby odblokować go na tę sesję — trafia ono bezpośrednio do tego menedżera na tym komputerze i nigdy nie jest zapisywane ani pokazywane agentowi.
+  vaultUnlockDesc: Agent chce zalogować się na stronie, dla której dane logowania są zapisane w {0}. Wpisz hasło główne, aby odblokować je na potrzeby tej sesji — trafia ono prosto do {0} na tej maszynie i nigdy nie jest zapisywane ani pokazywane agentowi.
   vaultUnlockPlaceholder: Hasło główne
   vaultUnlockKeepLocked: Pozostaw zablokowany
   vaultUnlockConfirm: Odblokuj
@@ -5223,6 +5352,11 @@ desktop:
     failed: 'Przekazanie nie powiodło się: {0}'
     timedOut: Hermes nie mógł połączyć się z Twoim połączeniem komunikatora. Uruchom je w Ustawienia → Komunikatory, a potem spróbuj przekazać ponownie.
     startMessaging: Uruchom komunikatory
+  resetZoom: Zresetuj powiększenie
+  slashCommandIgnoredBody: Poleceń ukośnika nie można łączyć z załącznikami. Usuń załącznik albo wyślij polecenie osobno.
+  slashCommandIgnoredTitle: Polecenie nie zostało wysłane
+  zoomIn: Powiększ
+  zoomOut: Pomniejsz
 tips:
   close: Nie pokazuj więcej tej wskazówki
   items:
@@ -5281,3 +5415,48 @@ ui:
   sidebar:
     title: Panel boczny
     description: Wyświetla mobilny panel boczny.
+  logs:
+    bottom: Koniec dziennika
+    search: Szukaj w dziennikach…
+    top: Początek dziennika
+sharedMetrics:
+  changeLater: Możesz to zmienić w dowolnym momencie w Ustawieniach → Bezpieczeństwo.
+  collectDesc: Ograniczone liczniki przechowywane na tym urządzeniu. Nigdy prompty, pliki, ścieżki ani tekst błędów.
+  collectLabel: Zbieraj statystyki użycia
+  collectedActivity: Aktywność, długość sesji, wyniki i klasy błędów
+  collectedIntro: 'Wyłącznie ograniczone liczniki:'
+  collectedMachine: 'Przybliżone informacje o maszynie: zakres pamięci RAM, typ GPU, wiek wersji Hermesa i kanał wydania, liczba zaległych aktualizacji, informacja, czy używany jest lokalny serwer modeli'
+  collectedMilestones: Liczniki konfiguracji w przedziałach
+  collectedModels: Trasy modeli i sumy tokenów
+  collectedNames: Wbudowane nazwy narzędzi, poleceń i katalogów
+  collectedReliability: Wyniki i czas aktualizacji, awarie, szybkość uruchamiania i odpowiedzi, stan platform komunikacyjnych
+  collectedUsage: 'Sposób korzystania z Hermesa: dokładność i wydajność agenta (trafienia edycji, pętle, odzyskiwanie, tokeny i wywołania narzędzi na zadanie, zerwania pamięci podręcznej), aktywny czas wg powierzchni i trybu Desktop, które obszary aplikacji, działania i ustawienia są używane, zamykane szybko lub wyłączane oraz wyniki konfiguracji dostawców'
+  consentBody: Współdzielone metryki zawierają wyłącznie ograniczone liczniki. Nigdy prompty, pliki, ścieżki ani tekst błędów. Zbieranie odbywa się lokalnie. Wysyłanie ich do Nous to osobna zgoda.
+  consentTitle: Pomóc ulepszyć Hermesa?
+  consentWindow: Wysyłane są wyłącznie pakiety, których cały okres zbierania mieści się w zarejestrowanym okresie zgody — dane sprzed jej wyrażenia lub z jakiejkolwiek przerwy w wysyłaniu pozostają na tej maszynie. Wysyłanie można w każdej chwili ponownie wyłączyć.
+  installId: 'Wysyłanie przesyła każdy dzienny pakiet do usługi telemetrii Nous. Pakiety zawierają install ID tego profilu: stabilny losowy UUID bez danych osobowych, resetowany przez usunięcie katalogu metryk współdzielonych.'
+  local: Zbieraj tylko lokalnie
+  'off': Nie, dziękuję
+  readDocs: Przeczytaj pełne szczegóły
+  saveFailed: Nie udało się zapisać wyboru
+  sendDesc: Przesyłaj każdy dzienny pakiet do usługi telemetrii Nous. Wysyłane są tylko dane z okresu, na który wyraziłeś zgodę. Wymaga włączonego zbierania.
+  sendLabel: Wysyłaj statystyki użycia do Nous
+  share: Zbieraj i wysyłaj do Nous
+  stripBody: Wyłącznie ograniczone liczniki, nigdy prompty ani pliki.
+  stripChoices:
+    local: Tylko lokalnie
+    'off': Nie, dziękuję
+    share: Wysyłaj do Nous
+  stripDetails: Szczegóły
+  unavailable: Zaktualizuj backend Hermesa, aby zmienić to ustawienie.
+  whatIsCollected: Co jest zbierane
+skillDeepLink:
+  destinationChanged: Zmienił się cel. Zamknij to okno i otwórz link instalacji ponownie.
+  installComplete: Zainstalowano „{0}”
+  installDescription: Ta umiejętność będzie dostępna w nowych sesjach. Instaluj wyłącznie ze źródeł, którym ufasz.
+  installTitle: Zainstalować „{0}”?
+  installTo: Zainstaluj w
+  installed: Zainstalowano
+  installing: Instalowanie…
+  source: Źródło
+  thisComputer: Ten komputer
