@@ -843,6 +843,7 @@ settings:
     billing: Rozliczenia
     notifications: Powiadomienia
     vault: Hasła i logowania
+    plugins: Wtyczki
   plugins:
     title: Wtyczki Desktop
     blurb: Rozszerzają tę aplikację, nie agenta — instalowane raz dla całej aplikacji, niezależnie od profilu, gatewaya czy komputera, z którym się łączysz. Dołączone do aplikacji lub wrzucone do folderu desktop-plugins; przełączniki działają na żywo.
@@ -1767,6 +1768,7 @@ settings:
     sshErrTimeout: Upłynął limit czasu połączenia SSH. Host może być nieosiągalny lub uśpiony.
     sshErrUpdateRequired: Zaktualizuj Hermes na zdalnym hoście przed połączeniem przez SSH z Desktop.
     sshErrUnknown: Połączenie SSH nie powiodło się.
+    sshErrInteractiveAuth: SSH przez Tailscale wymaga interaktywnej weryfikacji w przeglądarce. W terminalu uruchom `ssh <host> true`, przejdź weryfikację, a potem spróbuj ponownie — Hermes uruchamia SSH w trybie nieinteraktywnym.
   keys:
     loading: Wczytywanie kluczy API i danych uwierzytelniających...
     failedLoad: Nie udało się wczytać kluczy API
@@ -1903,6 +1905,8 @@ settings:
     speed: Szybkość
     speedStandard: Standardowa
     staleAuxDismiss: Nie pokazuj ponownie
+    followTask: Podążaj za {0}
+    inheritsFrom: dziedziczy {0}
   localModels:
     connectionChanged: Połączenie z lokalnymi modelami zmienione
     title: Modele lokalne
@@ -2392,6 +2396,13 @@ settings:
         dontShowAgain: Nie pokazuj ponownie
         notNow: Nie teraz
         enable: Użyj mojego profilu
+  pluginPages:
+    agentSettings: Ustawienia agenta
+    blurb: Opcje dodawane przez zainstalowane wtyczki. Każda wtyczka ma własną stronę, a część dodaje podstrony pod nią.
+    empty: Żadna wtyczka nie ma jeszcze ustawień.
+    manage: Zarządzaj wtyczkami
+    missing: Ta wtyczka nie ma strony ustawień. Może być wyłączona lub odinstalowana.
+    pageCount: 'Stron: {0}'
 skills:
   tabSkills: Umiejętności
   tabToolsets: Narzędzia
@@ -2521,6 +2532,7 @@ skills:
       optional: (opcjonalnie)
       secretSet: •••••••• (ustawiono)
       secretStoredAs: Przechowywane w pliku .env profilu jako {0}, nigdy w config.yaml; pozostaw puste, aby zachować bieżącą wartość.
+      required: Wymagane
   officialCatalog: Dostępne do instalacji
   officialPill: Oficjalna
   hub:
@@ -4441,6 +4453,18 @@ shell:
     free: darmowy
     priceTitle: Wejście {0}/Mtok · Wyjście {1}/Mtok · Odczyt z pamięci podręcznej {2}/Mtok
     removeFavorite: Usuń z ulubionych
+    limited: Ograniczony
+    limitedTip: '{0} osiągnął limit użycia. Reset o {1}; nadal możesz wybrać model na później.'
+    limitedUntil: Ograniczony do {0}
+    modelLimitedTip: Ten model osiągnął własny limit i resetuje się o {0}. Inne modele tutaj nadal działają.
+    modelResets: reset o {0}
+    poolAccount: Konto {0}
+    poolLimited: '{0}/{1} kont z limitem'
+    poolUnavailable: Zaloguj się ponownie
+    poolUnknown: Użycie niedostępne
+    usageLeft: '{0}% pozostało · reset o {1}'
+    usageTip: '{0} jest blisko limitu użycia.'
+    usageWindow: '{0}: {1}% pozostało, reset o {2}'
   modelOptions:
     noOptions: Brak opcji dla tego modelu
     options: Opcje
@@ -4507,6 +4531,9 @@ shell:
     showTerminal: Pokaż terminal
     hideTerminal: Ukryj terminal
     gateway: Gateway
+    backend: Backend
+    messagingStopped: komunikatory zatrzymane
+    messagingDegraded: '{0} niedostępny'
     gatewayReady: gotowy
     gatewayNeedsSetup: wymaga konfiguracji
     gatewayUnavailable: inferencja niedostępna

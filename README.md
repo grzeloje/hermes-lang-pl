@@ -9,7 +9,7 @@ over its bundled English:
 | File | Surface | Source it mirrors | Keys |
 |---|---|---|---|
 | `locales/pl.yaml` | core (Python `t()`: approval prompts, gateway/slash replies, CLI, tips, tool verbs…) | `locales/en.yaml` | 3426 / 3426 |
-| `locales/pl.desktop.yaml` | Hermes Desktop | `apps/desktop/src/i18n/en.ts` (`locales/_keys.desktop.json`) | 4966 / 4909 (16 skipped, see below) |
+| `locales/pl.desktop.yaml` | Hermes Desktop | `apps/desktop/src/i18n/en.ts` (`locales/_keys.desktop.json`) | 4992 / 4916 (17 skipped, see below) |
 | `locales/pl.tui.yaml` | Hermes TUI (`hermes --tui`) | `ui-tui/src/i18n/en.ts` (`locales/_keys.tui.json`) | 1250 / 1250 |
 
 ## Install
@@ -53,14 +53,15 @@ To go back: `hermes config set display.language en`; to remove: `hermes plugins 
 
 ### Not translated (fall back to English)
 
-16 Desktop entries cannot be expressed as a positional string and are intentionally absent from
+17 Desktop entries cannot be expressed as a positional string and are intentionally absent from
 `pl.desktop.yaml` (the app shows English for them): editorial intro content (`intro.custom`), array/object leaves
 (`composer.newSessionPlaceholders`, `composer.followUpPlaceholders`, `sidebar.projects.branchOff`), identity
 pass-throughs (`settings.vault.identifierShown`, `commandCenter.maintenance.bytes`, `rightSidebar.folderTip`) and
 **ternary-on-boolean entries** — strings where English interpolates a flag to choose between two wordings
 (`skills.toggleToolset` → `Turn {0} toolset {1 ? 'on' : 'off'}`, `settings.model.moaReferenceToggle`,
 `commandCenter.pets.toggleFailed`, `webhooks.toggleFailed`, `sidebar.projects.toggle`, `desktop.yoloSystem`,
-`ui.sidebar.toggle`, `settings.plugins.installModal.skillsReady`, `statusStack.control.gateLastExit`).
+`ui.sidebar.toggle`, `settings.plugins.installModal.skillsReady`, `statusStack.control.gateLastExit`,
+`shell.modelMenu.poolAccounts`).
 
 A pack string is positional and cannot branch, so translating one would render only the "on" variant — worse than
 English. When the English catalog gains a boolean-toggle entry, leaving it out is the correct choice, not an

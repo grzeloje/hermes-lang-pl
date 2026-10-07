@@ -1,14 +1,15 @@
-# Validation — desktop 4966 keys
+# Validation — desktop 4992 keys
 
-Sources: hermes-agent `origin/main` @ `8d256ff184` — `apps/desktop/src/i18n/en.ts`
-(4909 keys) cross-checked against `locales/_keys.desktop.json`.
+Sources: hermes-agent `origin/main` @ `a036b13793a` — `apps/desktop/src/i18n/en.ts`
+(4933 keys) cross-checked against `locales/_keys.desktop.json`.
 
-Coverage: desktop 4966 / 4909 English keys. 104 strings added for keys added to the
-English catalog since v0.2.0, and six existing entries corrected — they carried
+Coverage: desktop 4992 / 4916 English keys. 127 strings added: 104 for keys added to the
+English catalog since v0.2.0, plus 23 more from the 2026-10-06 catalog growth (Settings ▸ Plugins,
+model-menu limit rows, status-bar backend/messaging health), and six existing entries corrected — they carried
 placeholders the English entry does not have, so `adaptStringOverrides` never resolved
-them and the UI fell back to English. 16 entries remain intentionally absent (see README
-*Not translated*); 66 keys in the file are not in the English catalog (residue from
-removed features, ignored at runtime — carried over unchanged from v0.2.0).
+them and the UI fell back to English. 17 entries remain intentionally absent (see README
+*Not translated*); 76 keys in the file are not in the English catalog (residue from
+removed features, ignored at runtime — carried over unchanged).
 
 ## `hermes plugins validate`
 
@@ -22,25 +23,25 @@ removed features, ignored at runtime — carried over unchanged from v0.2.0).
 ✓ python dependencies — none declared
 ✓ capability probe — skipped (no __init__.py)
 ✓ built-in tool collisions — no tools to check
-✓ locale pl.desktop — pl.desktop.yaml: 4966 key(s), 4900 match the English
+✓ locale pl.desktop — pl.desktop.yaml: 4992 key(s), 4916 match the English
   desktop catalog
 ✓ locale pl.tui — pl.tui.yaml: 1250 key(s), 1241 match the English tui catalog
 ✓ locale pl — pl.yaml: 3426 key(s), 3422 match the English core catalog
 ⚠ no __init__.py — capability probe skipped (manifest-only plugin)
-⚠ pl.desktop.yaml: 66 key(s) not in the English desktop catalog (ignored at runtime)
+⚠ pl.desktop.yaml: 76 key(s) not in the English desktop catalog (ignored at runtime)
 ⚠ pl.tui.yaml: 9 key(s) not in the English tui catalog (ignored at runtime)
 ⚠ pl.yaml: 4 key(s) not in the English core catalog (ignored at runtime)
 
 Validation passed.
 ```
 
-The *not in catalog* warnings are pre-existing: those keys were in v0.2.0 and were not
-touched here.
+The *not in catalog* warnings are pre-existing: those keys date from v0.2.0 and earlier and
+are not touched here.
 
 ## Key-set / placeholder parity script
 
 ```
-[desktop] pl.desktop.yaml keys=4966; en.ts keys=4909; covered=4909; added=104
+[desktop] pl.desktop.yaml keys=4992; en.ts keys=4933; covered=4916; added=127
           placeholder_mismatch=0   symbol_mismatch=0   non_text_leaves=0
           removed_from_previous=0  values_changed=6
 RESULT: PASS
